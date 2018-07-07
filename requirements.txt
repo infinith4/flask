@@ -1,0 +1,5 @@
+certifi==2018.4.16
+gunicorn==19.9.0
+heapdict==1.0.0
+msgpack-python==0.2.3
+zict==0.1.3
