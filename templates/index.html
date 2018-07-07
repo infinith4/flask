@@ -1,11 +1,33 @@
-<body>
-  <div class="container">
-    <div class="header">
-      <h3 class="text-muted">Profile</h3>
-      {% for item in message %}
-        <h3>{{item.name}}</h3>
-        <a href={{item.link_url}} class="thumbnail"><img src={{item.image_name}}></a>
-      {% endfor %}
+<html>
+  <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function(){
+    $("#github").click(function(){
+      //$("#github_url").click();
+      location.href = "https://github.com/infinith4";
+    });
+  });
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Profile</h3>
+        {% for item in message %}
+          <h3>{{item.name}}</h3>
+          <a id="github_url" href={{item.link_url}} class="thumbnail" target="_blank"><img src={{item.image_name}}></a>
+          <!-- Accent-colored raised button with ripple -->
+          <div style="margin-top: 10px;">
+            <button id="github" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Show
+            </button>
+          </div>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</body>
+  </body>
+</html>
