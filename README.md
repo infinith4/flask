@@ -24,3 +24,9 @@ To deactivate an active environment, use:
 conda install python=3.6
 
 https://qiita.com/msrks/items/c57e0168fb89f160d488
+
+## How to run App
+
+
+export FLASK_APP=hello.py
+flask run
