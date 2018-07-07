@@ -1,5 +1,5 @@
-alabaster:                          0.7.10-py36h306e16b_0  
-    anaconda:                           5.2.0-py36_3           
+alabaster
+anaconda
     anaconda-client:                    1.6.14-py36_0          
     anaconda-project:                   0.8.2-py36h44fb852_0   
     asn1crypto:                         0.24.0-py36_0          
