@@ -16,11 +16,11 @@ def index():
     # static内の.pngファイルがimage_namesに格納されます。
     my_list = []
     for image in image_names:
-        my_dic = {}
-        my_dic['image_name'] = 'static/' + image
-        my_dic['link_url'] = 'https://github.com/infinith4'
-        # 飛び先のURLを何個も確保できなかったのでどの画像に対しても同じURLに飛ぶようにしました。
-        my_list.append(my_dic)
+        dic = {}
+        dic['name'] = 'Github'
+        dic['image_name'] = 'static/' + image
+        dic['link_url'] = 'https://github.com/infinith4'
+        my_list.append(dic)
 
     message = 'サンプル メッセージ'
     return render_template('index.html', message=my_list)
